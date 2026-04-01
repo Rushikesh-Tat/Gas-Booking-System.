@@ -1,0 +1,14 @@
+<?php
+$host = "localhost"; // or "127.0.0.1"
+$user = "root";      // default XAMPP user
+$pass = "";          // default XAMPP password is empty
+$db   = "lpggas";    // your database name
+
+// Create connection
+$con = mysqli_connect($host, $user, $pass, $db);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
